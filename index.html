@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vålerenga Kvinner Elite</title>
+  </head>
+  <body class="forside">
+    <!--Toppmeny-->
+    <header>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="index.html">FORSIDE</a></li>
+          <li><a href="kamperogmaal.html">KAMPER OG MÅL</a></li>
+          <li><a href="nyheter.html">NYHETER</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--sections er til de elementer som ligger alene på sitet, og div er til de elementer osm skal styles i css-->
+    <main>
+      <!--Lagbilde og navigasjon-->
+      <section class="lag-section">
+        <div class="lagbilde"></div>
+      </section>
+      <!--Kamper-->
+      <section class="kamper">
+        <div class="kampkort">
+          <p class="dato">SØN<br /><strong>05</strong><br />OKT.</p>
+          <img src="imgs/viflogo.webp" alt="VIF logo" />
+          <p>VS</p>
+          <img src="imgs/hamarlogo.webp" alt="SIL logo" />
+        </div>
+        <div class="kampkort">
+          <p class="dato">LØR<br /><strong>18</strong><br />OKT.</p>
+          <img src="imgs/hamarlogo.webp" alt="SIL logo" />
+          <p>VS</p>
+          <img src="imgs/viflogo.webp" alt="VIF logo" />
+        </div>
+        <div class="kampkort">
+          <p class="dato">FRE<br /><strong>24</strong><br />OKT.</p>
+          <img src="imgs/tromsølogo.webp" alt="TROMSØ logo" />
+          <p>VS</p>
+          <img src="imgs/viflogo.webp" alt="VIF logo" />
+        </div>
+      </section>
+      <!--Nyhetseksjon-->
+      <section class="nyheter">
+        <div class="news-overlay">
+          <div class="overlay-bg"></div>
+          <a href="nyheter.html" class="news-link-header">NYHETER</a>
+          <div>KAPTEINSTEAM</div>
+          <div>STATUS ETTER DE FØRSTE KAMPENE</div>
+          <div>VEIEN VIDERE</div>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <ul>
+        <li>Administrasjon</li>
+        <li>Våre sponsorer</li>
+        <li>Kontakt oss</li>
+      </ul>
+    </footer>
+    <script src="meny.js"></script>
+  </body>
+</html>

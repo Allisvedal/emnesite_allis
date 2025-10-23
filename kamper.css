@@ -1,0 +1,101 @@
+/*************** Reset *********************/
+/*Generelt på alle sider*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Navigasjon*/
+.top-nav {
+  padding: 10px 0;
+  background-color: #000080;
+  width: 100%;
+}
+
+.top-nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 100px;
+}
+
+.top-nav li a {
+  color: rgba(255, 0, 0, 0.772);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/*Generelt*/
+body {
+  font-family: "Playfair Display", serif;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: grid;
+  background-color: #000080;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+.bilder::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(imgs/celly-agnes-og-co.webp) no-repeat center/cover;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+/*Hovedinnhold*/
+main {
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+.h2 {
+  color: red;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.p {
+  margin: 15px 0;
+  line-height: 1.6;
+  color: white;
+  font-weight: bold;
+  font-size: 0.95rem;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+/*Footer*/
+footer {
+  background: #000080;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #ccc;
+  font-size: 0.9rem;
+  display: block;
+  margin: 5px 0;
+}
+
+/* Media Query for DESKTOP-skjermer (769px og oppover) */
+@media (min-width: 769px) {
+  .top-nav ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 200px;
+  }
+}

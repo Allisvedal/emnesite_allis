@@ -1,0 +1,122 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Navigasjon*/
+.top-nav {
+  padding: 10px 0;
+  background-color: #000080;
+  width: 100%;
+}
+
+.top-nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 100px;
+}
+
+.top-nav li a {
+  color: rgba(255, 0, 0, 0.772);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/*Footer*/
+footer {
+  background: #000080;
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+}
+
+footer a {
+  color: #ccc;
+  font-size: 0.9rem;
+  display: block;
+  margin: 5px 0;
+}
+
+.nyheter {
+  background: #000080;
+  width: 100%;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.main-news-title {
+  background-color: #8b0000;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.5rem;
+}
+
+.åretskapteinsteam,
+.status,
+.veien {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.status-etter-de-første-kampene {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.veien-videre {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.åretskapteinsteam p,
+.status-etter-de-første-kampene p,
+.veien-videre p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+  color: #ccc;
+  z-index: 10;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+h1 {
+  color: #ff0000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #ff0000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  opacity: 0.4;
+}
+
+/* Media Query for DESKTOP-skjermer (769px og oppover) */
+@media (min-width: 769px) {
+  .top-nav ul {
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 150px;
+  }
+}
